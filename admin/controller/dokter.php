@@ -127,7 +127,7 @@ switch (@$_GET['page']){
     case 'delete';
         $dokter ="delete from dokter where id_dokter='$_GET[id]'";
         $dokter=$conn->query($dokter);
-        header('Location: '.$con->site_url().'/admin/index.php?mod=dokter');
+        header('Location: /admin/index.php?mod=dokter');
     break;
     default:
         $sql="select dokter.nama_dokter,dokter.id_dokter,dokter.nip,ref_pendidikan.pendidikan,ref_spesialisasi.nama_spesialisasi from dokter
@@ -138,4 +138,3 @@ switch (@$_GET['page']){
         $content="views/dokter/tampil.php";
         include_once 'views/template.php';
 }
-?>
