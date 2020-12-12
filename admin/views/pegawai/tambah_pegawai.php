@@ -1,6 +1,6 @@
 <h4>Tambah Pegawai</h4>
 <hr>
-<form action="index.php?page=save" method="POST" enctype="multipart/form-data">
+<form action="index.php?page=save" method="POST" enctype="multipart/form-data" class="ajax">
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">

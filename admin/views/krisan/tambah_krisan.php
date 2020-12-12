@@ -1,6 +1,6 @@
 <h4>Tambah Kritik dan Saran</h4>
 <hr>
-<form action="index.php?mod=krisan&page=save" method="POST">
+<form action="index.php?mod=krisan&page=save" class="ajax" method="POST">
   <div class="form-group">
     <input type="hidden" name="id_krisan" value="<?= (isset($_POST['id_krisan'])) ? $_POST['id_krisan'] : ''; ?>" class="form-control">
     <label for="nama">Nama Penduduk</label>

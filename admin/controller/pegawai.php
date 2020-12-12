@@ -122,7 +122,7 @@ switch (@$_GET['page']) {
     $content = "views/pegawai/tambah_pegawai.php";
     include_once 'views/template.php';
     break;
-  case 'DELETE';
+  case 'delete';
     $pegawai = "DELETE FROM pegawai WHERE id_pegawai='$_GET[id]'";
     $pegawai = $conn->query($pegawai);
     header('Location: index.php');

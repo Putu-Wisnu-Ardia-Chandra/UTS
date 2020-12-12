@@ -1,6 +1,6 @@
 <h4>Tambah Masyarakat</h4>
 <hr>
-<form action="index.php?mod=masyarakat&page=save" method="POST" enctype="multipart/form-data">
+<form action="index.php?mod=masyarakat&page=save" class="ajax" method="POST" enctype="multipart/form-data">
   <div class="form-group">
     <label for="">Nama Penduduk</label>
     <input type="text" name="nama_masyarakat" required value="<?= (isset($_POST['nama_masyarakat'])) ? $_POST['nama_masyarakat'] : ''; ?>" class="form-control">
