@@ -1,6 +1,6 @@
 <?php
-unset($_SESSION['username']);
-unset($_SESSION['login']);
+session_start();
+$_SESSION = [];
+session_unset();
 session_destroy();
-header('Location: http://localhost/sipus/admin/');
-?>
+header('Location: ../index.php');

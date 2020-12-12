@@ -4,7 +4,7 @@ class Config
 {
   function  koneksi()
   {
-    $conn = new mysqli("localhost", "root", '', "puskesmas");
+    $conn = new mysqli("localhost", "root", '', "desa_tianyar_barat");
     if ($conn->connect_error) {
       $conn = die("Koneksi gagal : " . $conn->connect_error);
     }
